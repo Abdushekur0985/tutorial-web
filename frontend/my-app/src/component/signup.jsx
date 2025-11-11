@@ -34,7 +34,7 @@ function Signup() {
       formData.append("confirmPassword", value.confirmPassword);
       formData.append("imageProfile", value.imageProfile);
 
-      const response = await axios.post("http://localhost:3000/signup", formData, {
+      const response = await axios.post("https://abdushekurs-tutor-hub.onrender.com/signup", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
