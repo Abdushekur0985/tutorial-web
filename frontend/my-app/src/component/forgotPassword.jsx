@@ -15,7 +15,7 @@ function ForgotPassword() {
     setMessage("");
 
     try {
-      const res = await axios.post("https://abdushekurs-tutor-hub.onrender.com", { email }, {
+      const res = await axios.post("https://abdushekurs-tutor-hub.onrender.com/forgotPassword", { email }, {
         withCredentials: true,
       });
       setMessage(res.data.message || "If this email is registered, a reset link was sent.");
