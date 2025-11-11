@@ -16,7 +16,7 @@ function ResetPassword() {
     setMessage("");
 
     try {
-      const res = await axios.post(`http://localhost:3000/resetPassword/${token}`, {
+      const res = await axios.post(`https://abdushekurs-tutor-hub.onrender.com/resetPassword/${token}`, {
         newPassword,
       }, {
         withCredentials: true,
